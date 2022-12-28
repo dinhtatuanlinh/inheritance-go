@@ -3,8 +3,9 @@ package creature
 import "fmt"
 
 type Creature struct {
-	Name string
-	Real bool
+	Name   string
+	Real   bool
+	breath bool
 }
 
 func (c Creature) Dump() {
@@ -13,7 +14,8 @@ func (c Creature) Dump() {
 
 func NewCreature(name string, real bool) *Creature {
 	return &Creature{
-		Name: name,
-		Real: real,
+		Name:   name,s
+		Real:   real,
+		breath: true,
 	}
 }
