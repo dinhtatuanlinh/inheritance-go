@@ -22,8 +22,8 @@ func (f *FlightCreature) Dump() {
 func NewFlightCreature(name string, real bool, numberofWings int) *FlightCreature {
 	return &FlightCreature{
 		creature.Creature{
-			name,
-			real,
+			Name: name,
+			Real: real,
 		},
 		numberofWings,
 	}

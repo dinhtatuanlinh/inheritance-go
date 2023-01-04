@@ -14,8 +14,8 @@ func (c Creature) Dump() {
 
 func NewCreature(name string, real bool) *Creature {
 	return &Creature{
-		Name:   name,s
-		Real:   real,
-		breath: true,
+		Name: name,
+		Real: real,
+		//breath: true,
 	}
 }
